@@ -1,0 +1,14 @@
+.media {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-xl);
+}
+
+.media__figure {
+  flex-shrink: 0;
+}
+
+.media__body {
+  flex: 1;
+  min-width: 0;
+}

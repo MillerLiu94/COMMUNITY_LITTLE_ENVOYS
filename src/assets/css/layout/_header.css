@@ -1,0 +1,115 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 var(--spacing-3xl);
+  height: var(--header-height);
+  background-color: var(--color-secondary);
+  color: var(--color-surface);
+  box-shadow: var(--shadow-sm);
+}
+
+.header__left {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.header__logo {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+.header__title {
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-bold);
+}
+
+.header__right {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-lg);
+}
+
+.header__badge {
+  display: inline-block;
+  padding: 3px var(--spacing-md);
+  border-radius: var(--radius-pill);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-surface);
+}
+
+.header__badge--resident {
+  background-color: var(--color-accent-resident);
+}
+
+.header__badge--chief {
+  background-color: var(--color-accent-chief);
+  color: var(--color-text-primary);
+}
+
+.header__badge--admin {
+  background-color: var(--color-accent-admin);
+}
+
+.header__user {
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-medium);
+}
+
+.header__logout {
+  padding: var(--spacing-xxs) var(--spacing-xl);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: var(--radius-sm);
+  background: transparent;
+  color: var(--color-surface);
+  cursor: pointer;
+  font-size: var(--font-size-sm);
+  transition: background 0.2s;
+}
+
+.header__logout:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+@media (max-width: 767px) {
+  .header {
+    flex-wrap: wrap;
+    padding: 0 var(--spacing-lg);
+    height: auto;
+    min-height: var(--header-height);
+    gap: var(--spacing-xs);
+  }
+
+  .header__left {
+    flex-wrap: wrap;
+    gap: var(--spacing-xs);
+    padding: var(--spacing-sm) 0;
+  }
+
+  .header__title {
+    display: none;
+  }
+
+  .header__user {
+    display: none;
+  }
+
+  .header__badge {
+    font-size: 11px;
+    padding: 2px var(--spacing-sm);
+  }
+
+  .header__logout {
+    padding: var(--spacing-xxs) var(--spacing-lg);
+    font-size: var(--font-size-xs);
+  }
+}
+
+@media (max-width: 480px) {
+  .header__badge {
+    display: none;
+  }
+}

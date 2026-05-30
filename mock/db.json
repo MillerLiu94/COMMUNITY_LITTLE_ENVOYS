@@ -1,0 +1,327 @@
+{
+  "cases": [
+    {
+      "category": "垃圾堆積",
+      "description": "test",
+      "author": {
+        "name": "測試用戶",
+        "role": "resident"
+      },
+      "status": "pending",
+      "createdAt": 9999999999999,
+      "is_deleted": true,
+      "comments": [],
+      "images": [],
+      "location": null,
+      "addressText": "",
+      "id": 1717000000011,
+      "deletedAt": 1780119806933,
+      "deletedBy": "系統管理員"
+    },
+    {
+      "id": 1717000000010,
+      "category": "環境髒亂",
+      "description": "永安市場後方排水溝有異味，疑似有廢水排放，請相關單位前來檢測水質。",
+      "images": [],
+      "status": "pending",
+      "createdAt": 1717140000000,
+      "author": {
+        "name": "李阿花",
+        "role": "resident"
+      },
+      "comments": [],
+      "location": {
+        "lat": 24.1471,
+        "lng": 120.6705
+      },
+      "addressText": "永安市場後方排水溝",
+      "is_deleted": true,
+      "deletedAt": 1780119537304,
+      "deletedBy": "系統管理員"
+    },
+    {
+      "id": 1717000000008,
+      "category": "垃圾堆積",
+      "description": "社區回收站（福建街 120 號旁）已滿溢多日，資源回收物散落一地，影響環境衛生。",
+      "images": [],
+      "status": "pending",
+      "createdAt": 1717130000000,
+      "author": {
+        "name": "林小珍",
+        "role": "resident"
+      },
+      "comments": [],
+      "location": {
+        "lat": 24.1495,
+        "lng": 120.674
+      },
+      "addressText": "福建街 120 號旁回收站",
+      "is_deleted": false
+    },
+    {
+      "id": 1717000000006,
+      "category": "路燈故障",
+      "description": "民生路四段 12 號對面的路燈白天也一直亮著，浪費電又刺眼，請派人檢修。",
+      "images": [],
+      "status": "pending",
+      "createdAt": 1717120000000,
+      "author": {
+        "name": "resident",
+        "role": "resident"
+      },
+      "comments": [],
+      "location": null,
+      "addressText": "民生路四段 12 號對面",
+      "is_deleted": true,
+      "deletedAt": 1717125000000,
+      "deletedBy": "王小明"
+    },
+    {
+      "id": 1717000000004,
+      "category": "違規停車",
+      "description": "中山路二段 88 號前紅線長期有車輛違規停放，影響公車進站，請相關單位加強取締。",
+      "images": [],
+      "status": "processing",
+      "createdAt": 1717100000000,
+      "author": {
+        "name": "林小珍",
+        "role": "resident"
+      },
+      "comments": [],
+      "location": {
+        "lat": 24.1519,
+        "lng": 120.6755
+      },
+      "addressText": "中山路二段 88 號前",
+      "is_deleted": false
+    },
+    {
+      "id": 1717000000009,
+      "category": "道路破損",
+      "description": "大明路 200 號前的人行道地磚破損鬆動，雨天容易濺起泥水，長輩走路也很危險。",
+      "images": [],
+      "status": "resolved",
+      "createdAt": 1717080000000,
+      "author": {
+        "name": "張大偉",
+        "role": "resident"
+      },
+      "comments": [
+        {
+          "id": 1717080400000,
+          "text": "已經紀錄，會排入近期修繕排程。",
+          "author": {
+            "name": "陳里長",
+            "role": "chief"
+          },
+          "createdAt": 1717080400000
+        }
+      ],
+      "location": {
+        "lat": 24.1521,
+        "lng": 120.6799
+      },
+      "addressText": "大明路 200 號前",
+      "is_deleted": false,
+      "rejectReason": "fdd",
+      "rejectedBy": "陳里長"
+    },
+    {
+      "id": 1717000000005,
+      "category": "環境髒亂",
+      "description": "成功路底的空地雜草叢生，且有民眾亂丟垃圾，請里長協助整治。",
+      "images": [],
+      "status": "processing",
+      "createdAt": 1717050000000,
+      "author": {
+        "name": "趙淑惠",
+        "role": "resident"
+      },
+      "comments": [
+        {
+          "id": 1717050300000,
+          "text": "已通報環保局，預計下周進行環境整理。",
+          "author": {
+            "name": "陳里長",
+            "role": "chief"
+          },
+          "createdAt": 1717050300000
+        }
+      ],
+      "location": {
+        "lat": 24.1467,
+        "lng": 120.6721
+      },
+      "addressText": "成功路底空地",
+      "is_deleted": false
+    },
+    {
+      "id": 1717000000001,
+      "category": "路燈故障",
+      "description": "自由路一段 32 號前的路燈已經不亮一個禮拜了，晚上經過非常危險，請盡快派人維修。",
+      "images": [],
+      "status": "processing",
+      "createdAt": 1717000000000,
+      "author": {
+        "name": "王小明",
+        "role": "resident"
+      },
+      "comments": [],
+      "location": {
+        "lat": 24.1475,
+        "lng": 120.6738
+      },
+      "addressText": "自由路一段 32 號",
+      "is_deleted": false
+    },
+    {
+      "id": 1717000000007,
+      "category": "違規停車",
+      "description": "學士路與英才路交叉口，黃網線區域經常有車輛回堵時停在上面，影響路口通行。",
+      "images": [],
+      "status": "resolved",
+      "createdAt": 1716950000000,
+      "author": {
+        "name": "chief",
+        "role": "chief"
+      },
+      "comments": [
+        {
+          "id": 1716950200000,
+          "text": "已反映給交通大隊，將加強巡邏取締。",
+          "author": {
+            "name": "陳里長",
+            "role": "chief"
+          },
+          "createdAt": 1716950200000
+        },
+        {
+          "id": 1716980000000,
+          "text": "近期已有警方加強取締，情況改善很多。",
+          "author": {
+            "name": "系統管理員",
+            "role": "admin"
+          },
+          "createdAt": 1716980000000
+        }
+      ],
+      "location": {
+        "lat": 24.1533,
+        "lng": 120.6777
+      },
+      "addressText": "學士路與英才路交叉口",
+      "is_deleted": false
+    },
+    {
+      "id": 1717000000002,
+      "category": "道路破損",
+      "description": "中正路與民族路交叉口有一個大坑洞，機車經過很危險，希望里長協助通報相關單位處理。",
+      "images": [],
+      "status": "processing",
+      "createdAt": 1716900000000,
+      "author": {
+        "name": "李阿花",
+        "role": "resident"
+      },
+      "comments": [
+        {
+          "id": 1716900500000,
+          "text": "已通報市府養護工程處，會盡快安排修補。",
+          "author": {
+            "name": "陳里長",
+            "role": "chief"
+          },
+          "createdAt": 1716900500000
+        },
+        {
+          "id": 1716900800000,
+          "text": "謝謝里長協助！",
+          "author": {
+            "name": "李阿花",
+            "role": "resident"
+          },
+          "createdAt": 1716900800000
+        }
+      ],
+      "location": {
+        "lat": 24.1502,
+        "lng": 120.6689
+      },
+      "addressText": "中正路與民族路交叉口",
+      "is_deleted": false
+    },
+    {
+      "id": 1717000000003,
+      "category": "垃圾堆積",
+      "description": "公園路 15 號後方的巷子有大量廢棄家具和垃圾堆積，已經發出惡臭，請里長協助處理。",
+      "images": [],
+      "status": "resolved",
+      "createdAt": 1716800000000,
+      "author": {
+        "name": "張大偉",
+        "role": "resident"
+      },
+      "comments": [
+        {
+          "id": 1716800300000,
+          "text": "收到，會請清潔隊近日前往處理。",
+          "author": {
+            "name": "陳里長",
+            "role": "chief"
+          },
+          "createdAt": 1716800300000
+        },
+        {
+          "id": 1716850000000,
+          "text": "已安排清潔隊清運完畢，感謝回報。",
+          "author": {
+            "name": "陳里長",
+            "role": "chief"
+          },
+          "createdAt": 1716850000000
+        },
+        {
+          "id": 1716850100000,
+          "text": "環境終於恢復乾淨了，謝謝！",
+          "author": {
+            "name": "張大偉",
+            "role": "resident"
+          },
+          "createdAt": 1716850100000
+        }
+      ],
+      "location": {
+        "lat": 24.1488,
+        "lng": 120.6712
+      },
+      "addressText": "公園路 15 號後方巷子",
+      "is_deleted": false
+    }
+  ],
+  "users": [
+    {
+      "username": "resident",
+      "password": "123",
+      "name": "王小明",
+      "role": "resident",
+      "isSuspended": false,
+      "suspendedAt": null
+    },
+    {
+      "username": "chief",
+      "password": "123",
+      "name": "陳里長",
+      "role": "chief",
+      "isSuspended": false,
+      "suspendedAt": null
+    },
+    {
+      "username": "admin",
+      "password": "123",
+      "name": "系統管理員",
+      "role": "admin",
+      "isSuspended": false,
+      "suspendedAt": null
+    }
+  ]
+}
