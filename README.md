@@ -20,5 +20,11 @@ npm run build
 npm run lint
 ```
 
+### Start mock server (json-server)
+```
+npm run mock
+```
+Mock API runs on `http://localhost:3001` by default.
+
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
