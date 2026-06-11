@@ -42,16 +42,10 @@
         <table class="admin-table">
           <thead>
             <tr>
-              <th class="admin-table__th-sort" :class="sortClass('id')" @click="toggleSort('id')">
-                ID <span class="sort-arrow"/>
-              </th>
-              <th class="admin-table__th-sort" :class="sortClass('category')" @click="toggleSort('category')">
-                類別 <span class="sort-arrow"/>
-              </th>
+              <th>ID</th>
+              <th>類別</th>
               <th>回報者</th>
-              <th class="admin-table__th-sort" :class="sortClass('status')" @click="toggleSort('status')">
-                狀態 <span class="sort-arrow"/>
-              </th>
+              <th>狀態</th>
               <th>時間</th>
               <th>操作</th>
             </tr>
@@ -91,8 +85,8 @@
       <div class="case-pagination" v-if="totalPages > 1">
         <button class="page-btn" :disabled="meta.page <= 1" @click="$emit('update:page', meta.page - 1)">上一頁</button>
         <template v-for="p in visiblePages">
-          <button v-if="p === '...'" :key="p" class="page-btn page-btn--ellipsis" disabled>…</button>
-          <button v-else :key="p" class="page-btn" :class="{ 'page-btn--active': p === meta.page }" @click="$emit('update:page', p)">{{ p }}</button>
+          <button v-if="p === '...'" :key="'ellipsis-' + p" class="page-btn page-btn--ellipsis" disabled>…</button>
+          <button v-else :key="'page-' + p" class="page-btn" :class="{ 'page-btn--active': p === meta.page }" @click="$emit('update:page', p)">{{ p }}</button>
         </template>
         <button class="page-btn" :disabled="meta.page >= totalPages" @click="$emit('update:page', meta.page + 1)">下一頁</button>
       </div>
@@ -119,7 +113,7 @@ export default {
   name: 'CaseManagement',
   props: {
     cases: { type: Array, required: true },
-    meta: { type: Object, required: true },
+    meta: { type: Object, required: true },   // 控制分頁使用的參數
     loading: { type: Boolean, default: false },
     search: { type: String, default: '' },
     status: { type: String, default: '' },
@@ -157,18 +151,6 @@ export default {
   methods: {
     categoryLabel(cat) { return CATEGORY_LABELS[cat] || cat },
     statusLabel(status) { return STATUS_MAP[status] || status },
-    sortClass(field) {
-      if (this.sort !== field) return ''
-      return this.order === 'asc' ? 'sorted-asc' : 'sorted-desc'
-    },
-    toggleSort(field) {
-      if (this.sort === field) {
-        this.$emit('update:order', this.order === 'asc' ? 'desc' : 'asc')
-      } else {
-        this.$emit('update:sort', field)
-        this.$emit('update:order', 'desc')
-      }
-    },
     formatTime(ts) {
       if (!ts) return ''
       const d = new Date(ts)
@@ -303,35 +285,6 @@ export default {
   letter-spacing: 0.05em;
   padding-top: var(--spacing-lg);
   padding-bottom: var(--spacing-lg);
-}
-
-.admin-table__th-sort {
-  cursor: pointer;
-  user-select: none;
-}
-
-.admin-table__th-sort:hover {
-  color: var(--color-text-primary);
-}
-
-.sort-arrow {
-  display: inline-block;
-  width: 0;
-  height: 0;
-  margin-left: 4px;
-  vertical-align: middle;
-  border-left: 4px solid transparent;
-  border-right: 4px solid transparent;
-}
-
-.sorted-asc .sort-arrow {
-  border-bottom: 5px solid var(--color-secondary);
-  border-top: none;
-}
-
-.sorted-desc .sort-arrow {
-  border-top: 5px solid var(--color-secondary);
-  border-bottom: none;
 }
 
 .admin-table td {

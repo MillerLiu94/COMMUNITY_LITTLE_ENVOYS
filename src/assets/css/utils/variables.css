@@ -21,16 +21,16 @@
 
   --font-family-base: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
     'Helvetica Neue', Arial, 'Noto Sans TC', sans-serif;
-  --font-size-xs: 12px;
-  --font-size-sm: 13px;
-  --font-size-base: 14px;
-  --font-size-md: 15px;
-  --font-size-lg: 17px;
-  --font-size-xl: 18px;
-  --font-size-2xl: 20px;
-  --font-size-3xl: 26px;
-  --font-size-4xl: 32px;
-  --font-size-5xl: 42px;
+  --font-size-xs: 18px;
+  --font-size-sm: 19.5px;
+  --font-size-base: 21px;
+  --font-size-md: 22.5px;
+  --font-size-lg: 25.5px;
+  --font-size-xl: 27px;
+  --font-size-2xl: 30px;
+  --font-size-3xl: 39px;
+  --font-size-4xl: 48px;
+  --font-size-5xl: 63px;
 
   --font-weight-normal: 400;
   --font-weight-medium: 500;
