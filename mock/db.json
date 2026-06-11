@@ -342,8 +342,8 @@
       "password": "123",
       "name": "王小明",
       "role": "resident",
-      "isSuspended": true,
-      "suspendedAt": 1780152682807
+      "isSuspended": false,
+      "suspendedAt": null
     },
     {
       "username": "chief",

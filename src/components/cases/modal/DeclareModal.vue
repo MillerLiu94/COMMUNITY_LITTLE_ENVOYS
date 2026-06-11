@@ -399,7 +399,6 @@ export default {
       try {
         await this.addCase(newCase)
       } catch {
-        // fallback: 如�? API 失�?仍然?�到?�地
         this.ADD_CASE(newCase)
       }
       this.cleanupPreviews()
